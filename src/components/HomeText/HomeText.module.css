@@ -1,0 +1,29 @@
+.textContainer {
+  max-width: 37.5rem;
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 4rem;
+}
+
+.text,
+.textItalic {
+  text-align: center;
+}
+
+.text {
+  max-width: 34.375rem;
+  margin-bottom: 1rem;
+}
+
+.textItalic {
+  font-style: italic;
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-bk-1);
+  text-underline-offset: 0.35rem;
+}

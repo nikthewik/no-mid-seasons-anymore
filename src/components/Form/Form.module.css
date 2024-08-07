@@ -1,0 +1,48 @@
+.formContainer {
+  width: clamp(18.75rem, 50%, 25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectContainer {
+  width: 55%;
+  background-color: var(--clr-w-2);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.5rem var(--clr-bk-t2);
+}
+
+.select {
+  width: 95%;
+  color: var(--clr-bk-1);
+  background-color: var(--clr-w-2);
+}
+
+.submitBtn {
+  width: 40%;
+  color: var(--clr-w-2);
+  background-color: var(--clr-be-1);
+}
+
+.select,
+.submitBtn {
+  height: 3rem;
+  border-radius: 0.75rem;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+  /* Center text for <select> element on iOS + fallback */
+  text-align-last: center;
+  text-align: center;
+  cursor: pointer;
+}

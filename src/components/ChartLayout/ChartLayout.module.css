@@ -1,0 +1,20 @@
+.chartContainer {
+  width: 100%;
+  max-width: 37.5rem;
+  margin-bottom: 4rem;
+}
+
+.chart {
+  width: 100%;
+  height: 25rem;
+  padding-right: 4rem;
+}
+
+.tooltip {
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem var(--clr-bk-t2);
+  border-radius: 0.5rem;
+
+  color: var(--clr-bk-1);
+  font-weight: 400;
+}

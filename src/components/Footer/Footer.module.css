@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  background-color: var(--clr-o-1);
+}
+
+.footer a {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-bk-1);
+  text-underline-offset: 0.16rem;
+}
+
+.footer,
+.footer a {
+  font-size: 0.65rem;
+}

@@ -1,0 +1,7 @@
+.nav {
+  width: 100%;
+  max-width: 53.125rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}

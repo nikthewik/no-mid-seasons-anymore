@@ -1,0 +1,17 @@
+.listItem,
+.menuLink {
+  width: 100%;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.438rem;
+}
+
+@media (min-width: 768px) {
+  .menuLink {
+    padding: 0;
+  }
+}

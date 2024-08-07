@@ -1,0 +1,17 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-w-2);
+
+  box-shadow: 0 0 0.5rem var(--clr-bk-t2);
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 0.469rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0.469rem 4rem 0.469rem 1.5rem;
+  }
+}

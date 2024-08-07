@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  max-width: 37.5rem;
+  height: 25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 4rem;
+}
+
+.spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 3px solid var(--clr-w-2);
+  border-bottom-color: var(--clr-bk-1);
+  border-radius: 50%;
+
+  background-color: transparent;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

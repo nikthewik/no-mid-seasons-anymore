@@ -1,0 +1,80 @@
+/* /////////////////////////////////////////////////////////////////// */
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem var(--clr-w-1), 0 0 0 0.4rem var(--clr-bk-1);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: linear-gradient(
+    var(--clr-w-2) 0%,
+    var(--clr-w-2) 50%,
+    var(--clr-o-1) 100%
+  );
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  min-height: 100svh;
+}
+
+body,
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--clr-bk-1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* VARIABLES */
+:root {
+  /* WHITE */
+  --clr-w-1: #ffffff;
+  --clr-w-2: #ececec;
+
+  /* BLACK */
+  --clr-bk-1: #121212;
+  --clr-bk-t1: #12121240;
+  --clr-bk-t2: #00000033;
+
+  /* BROWN */
+  --clr-br-1: #a0522d;
+
+  /* BLUE */
+  --clr-be-1: #1a59a4;
+
+  /* RED */
+  --clr-r-1: #dd4425;
+
+  /* GRAY */
+  --clr-gy-1: #6b6b6b;
+
+  /* GREEN */
+  --clr-gn-1: #4caf50;
+
+  /* ORANGE */
+  --clr-o-1: #feae60;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
