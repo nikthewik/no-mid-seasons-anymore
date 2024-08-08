@@ -4,13 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 // Style
 import style from "./DesktopNavbar.module.css";
 // Components
-import Nav from "../Nav/Nav";
+import HeaderNav from "../HeaderNav/HeaderNav";
 import Logo from "../Logo/Logo";
 import Menu from "../Menu/Menu";
 
 function DesktopNavbar(): React.ReactElement {
   return (
-    <Nav>
+    <HeaderNav>
       <div className={style.navbar}>
         <Logo />
 
@@ -26,7 +26,7 @@ function DesktopNavbar(): React.ReactElement {
           </motion.div>
         </AnimatePresence>
       </div>
-    </Nav>
+    </HeaderNav>
   );
 }
 

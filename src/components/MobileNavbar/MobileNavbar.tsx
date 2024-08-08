@@ -6,7 +6,7 @@ import { MenuContext } from "../../App";
 // Style
 import style from "./MobileNavbar.module.css";
 // Components
-import Nav from "../Nav/Nav";
+import HeaderNav from "../HeaderNav/HeaderNav";
 import Logo from "../Logo/Logo";
 import Arrow from "../../assets/img/icon-arrow.png";
 import Menu from "../Menu/Menu";
@@ -15,7 +15,7 @@ function MobileNavbar(): React.ReactElement {
   const menu = useContext(MenuContext);
 
   return (
-    <Nav>
+    <HeaderNav>
       <motion.div
         animate={{
           height: menu?.isOpen ? "100%" : "3.75rem",
@@ -50,7 +50,7 @@ function MobileNavbar(): React.ReactElement {
           )}
         </AnimatePresence>
       </motion.div>
-    </Nav>
+    </HeaderNav>
   );
 }
 

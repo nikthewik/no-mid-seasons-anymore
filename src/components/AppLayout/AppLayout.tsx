@@ -25,8 +25,8 @@ function AppLayout(): React.ReactElement {
 
       <MainContainer>
         <Outlet />
-        <Form />
       </MainContainer>
+      <Form />
 
       <FooterContainer />
     </div>
