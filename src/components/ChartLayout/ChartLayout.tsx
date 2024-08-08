@@ -36,6 +36,7 @@ function ChartLayout({
               dataKey={dataKeyChart}
               stroke={strokeAreaClr}
               fill={fillAreaClr}
+              connectNulls={true}
             />
             <CartesianGrid stroke="var(--clr-bk-t1)" strokeDasharray={"5 5"} />
             <XAxis
