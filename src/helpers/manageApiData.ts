@@ -14,16 +14,13 @@ function manageApiData(data: ApiData, chart: string): ManagedData {
   const arcticKeys = Object.keys(arcticData.data);
   const newArcticData = arcticKeys
     .map((key: string) => {
-      if (key === "198712" || key === "198801") {
-        return delete arcticData.data[key];
-      } else {
-        return {
+      if (key === "198712" || key === "198801") return delete arcticData.data[key];
+      
+      return {
           date: key.slice(0, 4) + "." + key.slice(4, 6),
           value: arcticData.data[Number(key)].value,
-        };
       }
-    })
-    .filter((item): item is NewArctic => !!item);
+    }).filter((item): item is NewArctic => !!item);
 
   // Filtering Arctic Data
   if (chart === "arctic") return newArcticData;
