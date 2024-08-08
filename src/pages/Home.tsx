@@ -8,7 +8,7 @@ function Home(): React.ReactElement {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Home | NMSA</title>
+        <title>No Mid Seasons Anymore | NMSA</title>
       </Helmet>
 
       <HomeText />
