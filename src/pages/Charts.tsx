@@ -27,6 +27,7 @@ function Charts(): React.ReactElement {
   const { isPending, isError, data } = useQuery({
     queryKey: ["chart", chart],
     queryFn: () => getData(chart),
+    networkMode: "always",
   });
 
   if (!chart) return <Error />;
