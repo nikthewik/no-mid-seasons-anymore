@@ -1,18 +1,18 @@
 // Libraries
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // Components
 import HomeText from "../components/HomeText/HomeText";
 
 function Home(): React.ReactElement {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Home | NMSA</title>
       </Helmet>
 
       <HomeText />
-    </>
+    </HelmetProvider>
   );
 }
 

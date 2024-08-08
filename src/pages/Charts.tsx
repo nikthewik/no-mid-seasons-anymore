@@ -2,7 +2,7 @@
 import React from "react";
 import { Navigate, Params, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // Types
 import { NewArctic, Co2, Methane, No2, Temp } from "../types/DataTypes";
 // Helpers
@@ -58,7 +58,7 @@ function Charts(): React.ReactElement {
   const resultNo2: No2[] = result.filter((item): item is No2 => !!item);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>{`${manageTitle(chart)} | NMSA`}</title>
       </Helmet>
@@ -71,7 +71,7 @@ function Charts(): React.ReactElement {
       {chart === "arctic" && <ChartArctic data={resultArctic} />}
       {chart === "co2" && <ChartCo2 data={resultCo2} />}
       {chart === "no2" && <ChartNo2 data={resultNo2} />}
-    </>
+    </HelmetProvider>
   );
 }
 

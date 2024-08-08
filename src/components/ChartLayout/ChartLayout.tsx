@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 // Libraries
 import React from "react";
 import {
@@ -64,8 +62,8 @@ function ChartLayout({
                 offset: 20,
               }}
               domain={[
-                (dataMin: number) => YDataMin,
-                (dataMax: number) => YDataMax,
+                YDataMin,
+                YDataMax
               ]}
               tickMargin={8}
               tickFormatter={(value: number | string) =>

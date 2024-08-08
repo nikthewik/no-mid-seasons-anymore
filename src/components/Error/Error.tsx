@@ -1,7 +1,7 @@
 // Libraries
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // Context
 import { MenuContext, FormContext } from "../../App";
 // Helpers
@@ -23,7 +23,7 @@ function Error({ isError = true }: { isError?: boolean }): React.ReactElement {
   }
 
   return (
-    <>
+    <HelmetProvider>
       {isError && (
         <Helmet>
           <title>OPS! Something went wrong... | NMSA</title>
@@ -69,7 +69,7 @@ function Error({ isError = true }: { isError?: boolean }): React.ReactElement {
 
         <p className={style.p}>...or try viewing another chart.</p>
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 
